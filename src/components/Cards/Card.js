@@ -1,4 +1,5 @@
 import React from "react";
+import "../../styles/cardStyles/Card.css"
 
 const Card = ({ card, id }) => {
     return (

@@ -5,7 +5,7 @@ const Cards = ({ cardArr }) => {
   return (
     <div className="cardsWrap">
       {cardArr.map((card, i) => (
-        <Card card={card} id={i} />
+        <Card card={card} id={i} key={i}/>
       ))}
     </div>
   );
