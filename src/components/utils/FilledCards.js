@@ -15,51 +15,51 @@ import Russell from "../../assets/BillRussell.jpg";
 const FilledCards = [
     {
         name: "Lebron James",
-        img: {Lebron},
+        img: Lebron,
     },
     {
         name: "Steph Curry",
-        img: {Curry},
+        img: Curry,
     },
     {
         name: "Micheal Jordan",
-        img: {Jordan},
+        img: Jordan,
     },
     {
         name: "Kobe Bryant",
-        img: {Kobe},
+        img: Kobe,
     },
     {
         name: "Giannis Antetokounmpo",
-        img: {Giannis},
+        img: Giannis,
     },
     {
         name: "Nikola Jokic",
-        img: {Jokic},
+        img: Jokic,
     },
     {
         name: "Shaquille O'Neal",
-        img: {Shaq},
+        img: Shaq,
     },
     {
         name: "Wilt Chamberlain",
-        img: {Wilt},
+        img: Wilt,
     },
     {
         name: "Kevin Durant",
-        img: {Durant},
+        img: Durant,
     },
     {
         name: "Magic Johnson",
-        img: {Magic},
+        img: Magic,
     },
     {
         name: "Larry Bird",
-        img: {Bird},
+        img: Bird,
     },
     {
         name: "Bill Russell",
-        img: {Russell},
+        img: Russell,
     }
 ]
 
