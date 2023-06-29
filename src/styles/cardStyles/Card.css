@@ -1,4 +1,21 @@
 .cardWrapper {
     display: flex;
-    height: 10vh;
+    flex-direction: column;
+    width: 8vw;
+    padding: 12px;
+    background-color: rgb(255, 202, 138);
+    border-radius: 16px;
+    gap: 8px;
+    box-shadow: 3px 3px black;
+}
+
+.playerImg {
+    width: 100%;
+}
+
+.playerName {
+    font-family:'Courier New', Courier, monospace;
+    font-size: 1rem;
+    font-weight: 700;
+    text-align: center;
 }

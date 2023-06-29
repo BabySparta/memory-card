@@ -1,6 +1,6 @@
 import Lebron from "../../assets/LebronJames.jpg";
 import Curry from "../../assets/StephCurry.jpg";
-import Jordan from "../../assets/MichealJordan.jpg";
+import Jordan from "../../assets/MichaelJordan.jpg";
 import Kobe from "../../assets/KobeBryant.jpg";
 import Giannis from "../../assets/GiannisAntetokounmpo.jpg";
 import Jokic from "../../assets/NikolaJokic.jpg";
@@ -22,7 +22,7 @@ const FilledCards = [
         img: Curry,
     },
     {
-        name: "Micheal Jordan",
+        name: "Michael Jordan",
         img: Jordan,
     },
     {
