@@ -1,43 +1,70 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Cards from "./Cards/Cards";
 import FilledCards from "./utils/FilledCards";
 import ShuffleArr from "./utils/ShuffleArr";
 import Scoreboard from "./Scoreboard/Scoreboard";
-import "../styles/Body.css"
+import "../styles/Body.css";
 
 const Body = () => {
   const [cards, setCards] = useState(FilledCards);
   const [guessedCards, setGuessedCards] = useState([]);
   const [currScore, setCurrScore] = useState(0);
   const [bestScore, setBestScore] = useState(0);
+  const [startTime, setStartTime] = useState(null);
+  const [elapsedTime, setElapsedTime] = useState(0);
+
+  useEffect(() => {
+    const firstCardClicked = currScore === 0 && startTime === null;
+    if (firstCardClicked) {
+      setStartTime(Date.now());
+    }
+  }, [currScore, startTime]);
 
   const makeGuess = (e) => {
-    const cardGuessed = cards.find((card) => card.name === e.target.getAttribute("name"));
-  
-    const cardInArr = guessedCards.find((card) => card.name === cardGuessed.name);
+    const currentTime = Date.now();
+    const timeElapsed = currentTime - startTime;
 
-    if (cardInArr) {  
-        setCurrScore(0);
-        setGuessedCards([]);
-        setCards(ShuffleArr(cards));
+    setElapsedTime(timeElapsed);
+
+    setStartTime(currentTime);
+
+    const isWithinTimeLimit = timeElapsed <= 1000;
+
+    const cardGuessed = cards.find(
+      (card) => card.name === e.target.getAttribute("name")
+    );
+
+    const cardInArr = guessedCards.find(
+      (card) => card.name === cardGuessed.name
+    );
+
+    if (cardInArr) {
+      setCurrScore(0);
+      setGuessedCards([]);
+      setCards(ShuffleArr(cards));
     } else {
-        setCurrScore(prevScore => prevScore + 1);
-        setGuessedCards([...guessedCards, cardGuessed]);
-        setCards(ShuffleArr(cards));
-        updateBestScore();
+      if (isWithinTimeLimit) {
+        setCurrScore((prevScore) => prevScore + 3)
+        updateBestScore(3);
+      } else {
+        setCurrScore((prevScore) => prevScore + 2);
+        updateBestScore(2);  
+      }
+      setGuessedCards([...guessedCards, cardGuessed]);
+      setCards(ShuffleArr(cards));
     }
-  }
+  };
 
-  const updateBestScore = () => {
-    if ((currScore + 1) > bestScore) {
-      setBestScore(prevScore => prevScore + 1);
+  const updateBestScore = (num) => {
+    if (currScore + num > bestScore) {
+      setBestScore((prevScore) => prevScore + num);
     }
-  }
+  };
 
   return (
     <div className="body">
       <Scoreboard currScore={currScore} bestScore={bestScore} />
-      <Cards cardArr={cards} makeGuess={makeGuess}/>
+      <Cards cardArr={cards} makeGuess={makeGuess} />
     </div>
   );
 };
