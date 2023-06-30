@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/memory-card/static/css/main.02806cb3.css",
+    "main.js": "/memory-card/static/js/main.8763f242.js",
+    "static/media/BillRussell.jpg": "/memory-card/static/media/BillRussell.a751cbc3a26543642c30.jpg",
+    "static/media/NikolaJokic.jpg": "/memory-card/static/media/NikolaJokic.ca8a6bec88d2d3490f82.jpg",
+    "static/media/ShaquilleO'neal.jpg": "/memory-card/static/media/ShaquilleO'neal.68a1b70341bae06edc92.jpg",
+    "static/media/LarryBird.jpg": "/memory-card/static/media/LarryBird.711176367482e453ea17.jpg",
+    "static/media/GiannisAntetokounmpo.jpg": "/memory-card/static/media/GiannisAntetokounmpo.3fdcfd65a02596133dbe.jpg",
+    "static/media/KevinDurant.jpg": "/memory-card/static/media/KevinDurant.d7a554b2c153699cb5b7.jpg",
+    "static/media/StephCurry.jpg": "/memory-card/static/media/StephCurry.7868a05832dabafabfd9.jpg",
+    "static/media/WiltChamberlain.jpg": "/memory-card/static/media/WiltChamberlain.027ede23a6edcf48582d.jpg",
+    "static/media/MichaelJordan.jpg": "/memory-card/static/media/MichaelJordan.dbc93b28e7967f30d8d9.jpg",
+    "static/media/KobeBryant.jpg": "/memory-card/static/media/KobeBryant.388411ca758d5d05fe01.jpg",
+    "static/media/MagicJohnson.jpg": "/memory-card/static/media/MagicJohnson.1246b4b5c4fe303e06a6.jpg",
+    "static/media/LebronJames.jpg": "/memory-card/static/media/LebronJames.c015a221d1943cb0cf9e.jpg",
+    "static/media/StadiumBackground.jpeg": "/memory-card/static/media/StadiumBackground.c98d712c37261b41c3b6.jpeg",
+    "static/media/Seven Segment.ttf": "/memory-card/static/media/Seven Segment.3ee4f8118d9db6b61456.ttf",
+    "index.html": "/memory-card/index.html",
+    "main.02806cb3.css.map": "/memory-card/static/css/main.02806cb3.css.map",
+    "main.8763f242.js.map": "/memory-card/static/js/main.8763f242.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.02806cb3.css",
+    "static/js/main.8763f242.js"
+  ]
+}
