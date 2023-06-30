@@ -28,7 +28,7 @@ const Body = () => {
 
     setStartTime(currentTime);
 
-    const isWithinTimeLimit = timeElapsed <= 1000;
+    const isWithinTimeLimit = timeElapsed <= 1500;
 
     const cardGuessed = cards.find(
       (card) => card.name === e.target.getAttribute("name")
