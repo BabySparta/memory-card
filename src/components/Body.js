@@ -44,11 +44,11 @@ const Body = () => {
       setCards(ShuffleArr(cards));
     } else {
       if (isWithinTimeLimit) {
-        setCurrScore((prevScore) => prevScore + 3)
+        setCurrScore((prevScore) => prevScore + 3);
         updateBestScore(3);
       } else {
         setCurrScore((prevScore) => prevScore + 2);
-        updateBestScore(2);  
+        updateBestScore(2);
       }
       setGuessedCards([...guessedCards, cardGuessed]);
       setCards(ShuffleArr(cards));
